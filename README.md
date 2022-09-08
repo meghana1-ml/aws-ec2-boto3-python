@@ -1,1 +1,1 @@
-# aws-ec2-boto3
+# aws-ec2-boto3-python
