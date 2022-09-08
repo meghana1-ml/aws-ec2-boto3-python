@@ -2,7 +2,7 @@
 import boto3
 # Creating the connection with the resource of AWS EC2 service 
 ec2 = boto3.resource('ec2')
-# Adding the Tag KCDCHENNAI-DEMO for AWS EC2 using the instance ID
+# Adding the Tag BOTO3-DEMO for AWS EC2 using the instance ID
 response = ec2.create_tags(
     Resources=[
         '#### ENTER THE INSTANCE ID ###',      
@@ -10,7 +10,7 @@ response = ec2.create_tags(
     Tags=[
         {
             'Key': 'Name',
-            'Value': 'KCDCHENNAI-DEMO'
+            'Value': 'BOTO3-DEMO'
         },
     ]
 )
